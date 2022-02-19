@@ -1,0 +1,225 @@
+:root {
+    --Poppins: 'Poppins', sans-serif;   /* heading font-family */
+    --OpenSans: 'Open Sans', sans-serif;    /* body font-family */ 
+
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+
+/* ------------------------------------- Mobile styles ------------------------------------- */
+
+/* main styles */
+
+
+html {
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--violet);
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+
+/* logo styles */
+.logo {
+    width: 9rem;
+}
+
+.logo-pic {
+    width: 100%;
+}
+
+
+/* devices pic styles */
+
+.devices {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.devices-pic {
+    width: 100%;
+}
+
+
+/* heading styles */ 
+
+h1 {
+    font-family: var(--Poppins);
+    font-weight: 600;
+    padding: 0 0 1rem 0;
+}
+
+
+/* paragraph styles */
+
+p {
+    font-family: var(--OpenSans);
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+
+/* button styles */
+
+button {
+    font-family: var(--OpenSans);
+    width: 13rem;
+    border-radius: 50px;
+    border: none;
+    padding: 0.7rem 1rem;
+    color: var(--violet);
+    margin-bottom: 4rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: var(--softMagenta);
+    color: white;
+}
+
+
+/* icons styles */
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 1.1rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+}
+
+
+.icon:hover {
+    color: var(--softMagenta);
+    border: 1px solid var(--softMagenta);
+    cursor: pointer;
+}
+
+
+/* footer styles */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution {
+    font-family: var(--OpenSans);
+    width: 15rem;
+    border-radius: 10px;
+    border: none;
+    padding: 0.7rem 1rem;
+    color: var(--violet);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+}
+
+
+
+
+
+
+/* ------------------------------------- Mobile styles ------------------------------------- */
+
+
+
+@media (min-width: 950px) {
+
+    html {
+        font-size: 20px;
+    }
+
+
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: left;
+       
+        
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2%;
+    }
+    .imgs {
+        flex-basis: 58%;
+    }
+
+    .text{
+        flex-basis: 40%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    button{
+        margin-bottom: 0;
+    }
+
+    .icons {
+        justify-content: flex-end;
+        margin-bottom: 0;
+        padding-bottom: 2rem;
+    }
+
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+
+@media (min-width: 1100px) {
+    
+    h1 {
+        font-size: 35px;
+    }
+    
+    p {
+        font-size: 25px;
+    }
+
+}
